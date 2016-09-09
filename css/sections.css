@@ -8,8 +8,16 @@ body {
     height: 100%;
 }
 
-.section {
+.white-section {
     height: 100%;
     padding-top: 150px;
     text-align: center;
+    background: #fff;
+}
+
+.gray-section {
+    height: 100%;
+    padding-top: 150px;
+    text-align: center;
+    background: #eee;
 }
