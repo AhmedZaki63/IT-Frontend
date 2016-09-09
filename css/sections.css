@@ -21,3 +21,11 @@ body {
     text-align: center;
     background: #eee;
 }
+
+.small-section {
+    height: 50%;
+    padding-top: 80px;
+    text-align: center;
+    color: #fff;
+    background: #2D2D2D;
+}
