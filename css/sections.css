@@ -24,7 +24,7 @@ body {
 
 .small-section {
     height: 50%;
-    padding-top: 80px;
+    padding-top: 70px;
     text-align: center;
     color: #fff;
     background: #2D2D2D;
@@ -35,4 +35,15 @@ body {
     font-size:12px;
     color:#fff;
     background-color:#1D1D1D;
+}
+
+.social {
+    margin-top: 80px;
+    padding: 0 10px;
+    transform: scale(0.9);
+    transition: transform 0.3s;
+}
+
+.social:hover {
+    transform: scale(1);
 }
