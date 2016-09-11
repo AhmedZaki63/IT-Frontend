@@ -23,8 +23,7 @@ body {
 }
 
 .small-section {
-    height: 50%;
-    padding-top: 70px;
+    padding: 50px 0 100px 0;
     text-align: center;
     color: #fff;
     background: #2D2D2D;
@@ -38,12 +37,29 @@ body {
 }
 
 .social {
-    margin-top: 80px;
-    padding: 0 10px;
+    margin-top: 50px;
     transform: scale(0.9);
     transition: transform 0.3s;
 }
 
 .social:hover {
     transform: scale(1);
+}
+
+#home img{
+    height: 350px;
+    width: 350px;
+}
+
+.box_skitter_large
+{
+    height: 500px;
+    width: 900px;
+	margin:auto;
+    margin-top: 60px;
+}
+
+.box_skitter img {
+    height:500px;
+    width: 900px;
 }
