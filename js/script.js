@@ -1,11 +1,60 @@
-// Scrolling Animation \\
 $(document).ready(function(){
+    
+    // Scrolling Animation \\
     $('a.auto-scroll').click(function() {
         $('html, body').stop().animate({scrollTop: $($(this).attr('href')).offset().top}, 1000);
         event.preventDefault();
     });
     
+    // Slick Animation \\
+    $('.single').slick({
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        dots: true,
+    });   
+    
+    // Workshop Description Viewr \\
+    var myDiv = document.getElementById("op"),
+    myDiv1 = document.getElementById("op1"),
+    myDiv2 = document.getElementById("op2"),
+	myDiv3 = document.getElementById("op3"),
+    myDiv4 = document.getElementById("op4"),
+	myDiv5 = document.getElementById("op5");
+
+    myDiv.onclick = function () {
+        "use strict";
+        document.getElementById("text").innerHTML = "Android ";
+    }
+
+    myDiv1.onclick = function () {
+        "use strict";
+        document.getElementById("text").innerHTML = "Web";
+    }
+
+    myDiv2.onclick = function () {
+        "use strict";
+        document.getElementById("text").innerHTML = "java";
+    }
+
+    myDiv3.onclick = function () {
+        "use strict";
+        document.getElementById("text").innerHTML = "PhotoShop";
+    }
+
+    myDiv4.onclick = function () {
+        "use strict";
+        document.getElementById("text").innerHTML = "PHP";
+    }
+
+    myDiv5.onclick = function () {
+        "use strict";
+        document.getElementById("text").innerHTML = "jQuery";
+    }
+
+
     $('a').css('text-decoration', 'none');
+    $('[data-toggle="popover"]').popover();
+       
 });
 
 //////////////////////////////////////////////////////////
