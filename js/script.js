@@ -2,7 +2,7 @@ $(document).ready(function(){
     
     // Scrolling Animation \\
     $('a.auto-scroll').click(function() {
-        $('html, body').stop().animate({scrollTop: $($(this).attr('href')).offset().top}, 1000);
+        $('html, body').stop().animate({scrollTop: $($(this).attr('href')).offset().top}, 1500, 'easeInOutExpo');
         event.preventDefault();
     });
     
@@ -10,7 +10,7 @@ $(document).ready(function(){
     $('.single').slick({
         slidesToShow: 3,
         slidesToScroll: 1,
-        dots: true,
+        dots: true
     });   
     
     // Workshop Description Viewr \\
