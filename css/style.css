@@ -6,11 +6,11 @@ html {
 body {
     /*font-family:"Segoe UI Light";*/
     width: 100%;
-    height: 100%;  
+    height: 100%;
 }
 
 #home {
-    padding: 50px 0 50px 0;
+    padding: 50px;
     text-align: center;
 }
 
@@ -20,6 +20,7 @@ body {
 
 #about {
     padding-top: 100px;
+    text-align: center;
 }
 
 #blog {
@@ -35,14 +36,16 @@ body {
 }
 
 #contact {
-    padding: 50px 0 100px 0;
+    padding: 50px;
     text-align: center;
     color: #fff;
     background: #2D2D2D;
 }
 
 .social {
-    margin: 50px 10px 0 10px;
+    margin: 20px 20px;
+    height: 100px;
+    width: 100px;
     transform: scale(0.9);
     transition: transform 0.3s;
 }
@@ -52,10 +55,10 @@ body {
 }
 
 #footer {
-    padding:15px 0;
-    font-size:12px;
-    color:#fff;
-    background-color:#1D1D1D;
+    padding: 10px;
+    font-size: 12px;
+    color: #fff;
+    background-color: #1D1D1D;
 }
 
 .navbar .navbar-nav {
@@ -81,42 +84,43 @@ body {
 .affix {
     top: 0;
     width: 100%;
-    z-index: 99;
+    z-index: 10;
 }
 
-.circle
-{ 
-    border-radius: 50%;
+.circle {
+    width: 360px;
+    height: 360px;
     box-shadow: 5px -5px rgba(0,0,0,0.6);
-    text-align: center;
-    height: 500px;
-    width: 500px;
-    display:table;
-    margin: 50px 20px;
+    border-radius: 50%;
+    margin: 10px auto;
     color: #fff;
 }
 
-.circle.mission {
+.circle .content {
+    width: 320px;
+    height: 320px;
+    margin: auto;
+}
+
+.mission .circle {
     background:#64C0BA;
 }
 
-.circle.about-us {
+.about-us .circle {
     background:#27A5DC;
-    margin-top: 200px;
 }
 
-.circle.vision {
+.vision .circle {
     background:#A5DBDD;
 }
 
-.circle h2 {
-    margin-top: 20px;
+.circle .content img {
+    height: 100px;
+    width: 100px;
 }
 
-.circle img {
-    height: 128px;
-    width: 128px;
-    margin-top: 10px;
+.circle .content h2 {
+    margin-top: 30px;
 }
 
 .single img {
@@ -162,3 +166,4 @@ body {
   position: relative;
   top: 16px;
 }
+
