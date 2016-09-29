@@ -6,6 +6,9 @@ $(document).ready(function(){
         event.preventDefault();
     });
     
+    $(".navbar").affix({offset: {top: $("#home").outerHeight(true)} });
+    $('a').css('text-decoration', 'none');
+    
     // Slick Animation \\
     $('.single').slick({
         slidesToShow: 3,
@@ -51,8 +54,6 @@ $(document).ready(function(){
         document.getElementById("text").innerHTML = "jQuery";
     }
 
-
-    $('a').css('text-decoration', 'none');
     $('[data-toggle="popover"]').popover();
        
 });
