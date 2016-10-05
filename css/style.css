@@ -24,14 +24,13 @@ body {
 }
 
 #blog {
-    height: 100%;
+    /*height: 100%;*/
     padding-top: 100px;
     text-align: center;
 }
 
 #workshops {
-    height: 100%;
-    padding-top: 100px;
+    padding: 150px 0;
     text-align: center;
 }
 
@@ -74,7 +73,6 @@ body {
     float: none;
     vertical-align: top;
     font-size: 15px;
-    transition: all 0.5s ease;
 }
 
 .navbar-nav li{
@@ -101,7 +99,7 @@ body {
     z-index: 10;
 }
 
-.affix ~ section {
+.affix ~ * {
      position: relative;
      top: 50px;
   }
@@ -110,7 +108,7 @@ body {
     width: 360px;
     height: 360px;
     box-shadow: 5px -5px rgba(0,0,0,0.6);
-    border-radius: 50%;
+    border-radius: 20%;
     margin: 10px auto;
     color: #fff;
 }
@@ -142,47 +140,168 @@ body {
     margin-top: 30px;
 }
 
-.single img {
-    margin: auto;
-    padding-top: 40px;
+#intro-section {
+    position: relative;
+    min-height: 600px;
+    z-index: 100;
 }
-
-#text {
-    border: 4px double #444;
-    width:100px;
-    margin: 0 auto;
-    padding: 10px;
+#intro-section .container {
+    position: relative;
+    top: 35%;
+    transform: translate(0, 110%);
 }
-
-#workshops ul {
+#intro-section .dots,
+#intro-section .dots li {
+    left: 0;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 0;
+}
+#intro-section .dots {
+    right: 0;
+    bottom: 0;
     list-style: none;
-    margin: 100px auto;
+    z-index: 10;
+}
+#intro-section .dots li.selected {
+    display: none;
+}
+#intro-section .logo {
+    position: relative;
+    text-align: center;
+}
+#intro-section .banner {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 300px;
+}
+#intro-section .banner li {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    text-align: center;
+    list-style: none;
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 48px;
+    opacity: 0;
+    visibility: hidden;
+    transition: all .3s;
+}
+#intro-section .banner li.selected {
+    opacity: 1;
+    visibility: visible;
+    transform: scale(.9);
+}
+#intro-section .banner li span {
+    display: block;
+    max-width: 600px;
+    margin: 0 auto;
 }
 
-#workshops ul li {
-  float: left;
-  text-align: center;
-  min-height: 33px;
-  min-width: 33px;
-  margin: 0 10px;
-  border-radius: 100%;
-  cursor: pointer;
-  position: relative;
-  z-index: 1;
+h1 {
+    display: block;
+    font-weight: bold;
 }
 
-#workshops ul li i {
-    color: blue;
-    font-size:90px;
-    padding: 6px 0;
-    margin:20px;
+.site-page-header {
+    background-color: #F5F8FA;
+    padding: 0 20%;
+    border-bottom: 1px solid #eee;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+@media (min-width: 250px) {
+    .site-page-header{
+        height: 400px;
+    }
+    .site-page-header h1 {
+        font-size: 1.23em;
+    }
+}
+
+@media (min-width: 356px) {
+    .site-page-header h1 {
+        font-size: 1.5em;
+    }
+}
+
+@media (min-width: 750px) {
+    .site-page-header{
+        height: 250px;
+    }
+    .site-page-header h1 {
+        font-size: 1.7em;
+    }
 }
 
 .spn {
-  width: 800px;
+  width: 80%;
   border: 1px solid #ccc;
-  margin: 0 auto;
+  margin: auto;
   position: relative;
   top: 16px;
 }
 
+#workshops ul {
+    list-style: none;
+    margin: 50px auto;
+}
+
+#workshops ul li i {
+    font-size:90px;
+}
+
+.block{
+    height: 320px;
+    margin: 20px 0;
+    border-radius: 5px;
+    border: 2px solid #eee;
+    transition: all .3s;
+}
+
+.block:hover {
+    transform: scale(1.01);
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.1);
+}
+
+.block h3 {
+    backface-visibility: hidden;
+    transform: translateZ(0);
+}
+
+.news-background {
+    position:fixed;
+    padding:0;
+    margin:0;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    background:rgba(200,200,200,0.9);
+    z-index: 999;
+    display:none;
+}
+
+.news-tab {
+    margin: auto;
+    width: 70%;
+    height: 70%;
+    border-radius: 5px;
+    background: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.close {
+    margin: 10px;
+}

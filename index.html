@@ -23,7 +23,6 @@
     <link rel="stylesheet" href="css/slick-theme.css">
     <link rel="stylesheet" href="css/animate.css"/>
     <link rel="stylesheet" href="css/skitter.styles.min.css"/>
-    
     <!-- Style CSS -->
     <link rel="stylesheet" href="css/style.css">
 
@@ -31,15 +30,32 @@
 
 <body id="page-top" data-spy="scroll">
 
-    <!-- Intro Section -->
-    <section id="home">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <img  class="animated zoomInRight" src="img/logo.png">
-                </div>
-            </div>
+    <!-- News Tab -->
+    <div class="news-background">
+        <div class="news-tab">
+            <div class="fa fa-times-circle fa-2x close"></div>
         </div>
+    </div>
+    
+    <!-- Intro Section -->
+    <section id="intro-section">
+        <ul class="dots"></ul>
+         <div class="container">
+             <div class="row">
+                <div class="col-lg-12">
+                    <div class="logo">
+                       <img class="animated zoomInRight" src="img/logo.png" width="135">
+                    </div>
+                 </div>
+             </div>
+            <ul class="banner">
+               <li class="selected"><span>The Unmissable Spirit</span></li>
+               <li><span>The Ultimate Experience</span></li>
+               <li><span>Embrace the Change</span></li>
+               <li><span>Discover your Inner self</span></li>
+               <li><span>#Say_C</span></li>
+            </ul>
+         </div>    
     </section>
     
     <!-- Navigation Bar -->
@@ -73,30 +89,24 @@
         <div class="container">
             <div class="row">
                 <div class="mission col-md-4 col-sm-6">
-                    <div class="circle">
-                        <div class="content">
-                            <img src="img/mission.png">
-                            <h2>MISSION</h2>
-                            <h4>Improve students technical and non-technical skills and practice on what they learn through professional trainers</h4>
-                        </div>
+                    <div class="content">
+                        <!--img src="img/mission.png"-->
+                        <h2>MISSION</h2>
+                        <h4>Improve students technical and non-technical skills and practice on what they learn through professional trainers</h4>
                     </div>
                 </div>
                 <div class="about-us col-md-4 col-sm-6">
-                    <div class="circle">
-                        <div class="content">
-                            <img src="img/about.png">
-                            <h2>ABOUT US</h2>
-                            <h4>COMPASS - COMPAny Simulation for Students was founded in 2008. It's the first student activity in the faculty of Computer and Information Sciences ASU</h4>
-                        </div>
+                    <div class="content">
+                        <!--img src="img/about.png"-->
+                        <h2>ABOUT US</h2>
+                        <h4>COMPASS - COMPAny Simulation for Students was founded in 2008. It's the first student activity in the faculty of Computer and Information Sciences ASU</h4>
                     </div>
                 </div>
                 <div class="vision col-md-4 col-sm-6">
-                    <div class="circle">
-                        <div class="content">
-                            <img src="img/vision.png">
-                            <h2>VISION</h2>
-                            <h4>Fill the gap between academic field and working field and qualify students for the job market's needs, in order to have a better career</h4>
-                        </div>
+                    <div class="content">
+                        <!--img src="img/vision.png"-->
+                        <h2>VISION</h2>
+                        <h4>Fill the gap between academic field and working field and qualify students for the job market's needs, in order to have a better career</h4>
                     </div>
                 </div>  
             </div>
@@ -104,11 +114,29 @@
     </section>
     
     <!-- Blog Section -->
-    <section id="blog" class="">
+    <section id="blog">
         <div class="container">
             <div class="row">
-                <div class="col-lg-12">
-                    <h1>OUR BLOG</h1>
+                <h1>OUR BLOG</h1>
+                <div class="news-list">
+                    <div class="col-md-4 col-sm-6">
+                        <div class="block">
+                            <img src="gallery/1.jpg" width="100%" height="80%">
+                            <h3>Compass Is launching</h3>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6">
+                        <div class="block">
+                            <img src="gallery/2.jpg" width="100%" height="80%">
+                            <h3>Compass Is launching</h3>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6">
+                        <div class="block">
+                            <img src="gallery/7.jpg" width="100%" height="80%">
+                            <h3>Compass Is launching</h3>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -116,20 +144,50 @@
     
     <!-- Workshops Section -->
     <section id="workshops">
-        <div class="container">
+        <div class="container-fluid">
             <div class="row">
-                <div class="col-lg-12">
-                    <h1>Workshops</h1>
-                    <div id='text'></div>
-                    <ul>
-                        <li id='op'><i class="fa fa-circle fa-5x fa-fw"></i></li>
-                        <li id='op1'><i class="fa fa-circle fa-5x fa-fw"></i></li>
-                        <li id='op2'><i class="fa fa-circle fa-5x fa-fw"></i></li>
-                        <li id='op3'><i class="fa fa-circle fa-5x fa-fw"></i></li>
-                        <li id='op4'><i class="fa fa-circle fa-5x fa-fw"></i></li>
-                        <li id='op5'><i class="fa fa-circle fa-5x fa-fw"></i></li>
-				    </ul>
-				    <div class='spn'></div>
+                <header class="site-page-header">
+                    <h1  id='text' class="site-page-title">WORKSHOPS</h1>
+                </header>
+                <div class='spn'></div>
+                <div class="projects-categories">
+                    <ul class="container">
+                        <li id='op' class="col-md-2 col-sm-4 col-xs-6">
+                            <span class="action-circle">
+                                <i class="icon fa fa-circle" style="color: #dd3333;" > </i>
+                            </span>
+                        </li>
+
+                        <li id='op1' class="col-md-2 col-sm-4 col-xs-6">
+                            <span class="action-circle">
+                                <i class="icon fa fa-circle" style="color: #81d742;"></i>
+                            </span>
+                        </li>
+
+                        <li id='op2' class="col-md-2 col-sm-4 col-xs-6">
+                            <span class="action-circle">
+                                <i class="icon fa fa-circle" style="color: #dd9933;"></i>
+                            </span>
+                        </li>
+
+                        <li id='op3' class="col-md-2 col-sm-4 col-xs-6">
+                            <span class="action-circle">
+                                <i class="icon fa fa-circle" style="color: #1e73be;"></i>
+                            </span>
+                        </li>
+
+                        <li id='op4' class="col-md-2 col-sm-4 col-xs-6">	
+                            <span class="action-circle">
+                                <i class="icon fa fa-circle" style="color: #8224e3;"></i>
+                            </span>	
+                        </li>
+
+                        <li id='op5' class="col-md-2 col-sm-4 col-xs-6">
+                            <span class="action-circle">
+                                <i class="icon fa fa-circle" style="color: #7c7c7c;"></i>
+                            </span>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </div>
@@ -139,22 +197,20 @@
     <section id="contact">
         <div class="container">
             <div class="row">
-                <div class="col-lg-12">
-                    <h2>CONTACT</h2>
-                    <div>
-                        <a href="https://www.facebook.com/COMPASS.Official" target="blank">
-                            <img class="social" src="img/facebook.png" alt="Facbook">
-                        </a>
-                        <a href="https://twitter.com/COMPASS_ASU" target="blank">
-                        <img class="social" src="img/twitter.png" alt="Twitter">
-                        </a>
-                        <a href="https://www.instagram.com/compassasu" target="blank">
-                            <img class="social" src="img/instagram.png" alt="Instagram">
-                        </a>
-                        <a href="https://play.google.com/store/apps/details?id=com.compassasu.compassasu" target="blank">
-                            <img class="social" src="img/android.png" alt="Google Play">
-                        </a>
-                    </div>
+                <h2>CONTACT</h2>
+                <div>
+                    <a href="https://www.facebook.com/COMPASS.Official" target="blank">
+                        <img class="social" src="img/facebook.png" alt="Facbook">
+                    </a>
+                    <a href="https://twitter.com/COMPASS_ASU" target="blank">
+                    <img class="social" src="img/twitter.png" alt="Twitter">
+                    </a>
+                    <a href="https://www.instagram.com/compassasu" target="blank">
+                        <img class="social" src="img/instagram.png" alt="Instagram">
+                    </a>
+                    <a href="https://play.google.com/store/apps/details?id=com.compassasu.compassasu" target="blank">
+                        <img class="social" src="img/android.png" alt="Google Play">
+                    </a>
                 </div>
             </div>
         </div>
@@ -187,6 +243,10 @@
     
     <!-- JavaScript Code-->
     <script src="js/script.js"></script>
+    
+    <!-- Bdaya JavaScript -->
+    <script src='bdaya/vendor.js'></script>
+    <script src='bdaya/bdaya.js'></script>
     
 </body>
 
