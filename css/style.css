@@ -4,7 +4,6 @@ html {
 }
 
 body {
-    /*font-family:"Segoe UI Light";*/
     width: 100%;
     height: 100%;
 }
@@ -35,14 +34,14 @@ body {
 }
 
 #contact {
-    padding: 50px;
+    padding: 10px;
     text-align: center;
     color: #fff;
     background: #2D2D2D;
 }
 
 .social {
-    margin: 20px 20px;
+    margin: 10px 20px;
     height: 100px;
     width: 100px;
     transform: scale(0.9);
@@ -140,38 +139,44 @@ body {
     margin-top: 30px;
 }
 
-#intro-section {
+#intro {
     position: relative;
     min-height: 600px;
     z-index: 100;
 }
-#intro-section .container {
+
+#intro .container {
     position: relative;
     top: 35%;
     transform: translate(0, 110%);
 }
-#intro-section .dots,
-#intro-section .dots li {
+
+#intro .dots,
+#intro .dots li {
     left: 0;
     margin: 0;
     padding: 0;
     position: absolute;
     top: 0;
 }
-#intro-section .dots {
+
+#intro .dots {
     right: 0;
     bottom: 0;
     list-style: none;
     z-index: 10;
 }
-#intro-section .dots li.selected {
+
+#intro .dots li.selected {
     display: none;
 }
-#intro-section .logo {
+
+#intro .logo {
     position: relative;
     text-align: center;
 }
-#intro-section .banner {
+
+#intro .banner {
     text-align: center;
     margin: 0;
     padding: 0;
@@ -180,7 +185,8 @@ body {
     right: 0;
     top: 300px;
 }
-#intro-section .banner li {
+
+#intro .banner li {
     position: absolute;
     top: 0;
     width: 100%;
@@ -193,12 +199,14 @@ body {
     visibility: hidden;
     transition: all .3s;
 }
-#intro-section .banner li.selected {
+
+#intro .banner li.selected {
     opacity: 1;
     visibility: visible;
     transform: scale(.9);
 }
-#intro-section .banner li span {
+
+#intro .banner li span {
     display: block;
     max-width: 600px;
     margin: 0 auto;
@@ -207,6 +215,7 @@ body {
 h1 {
     display: block;
     font-weight: bold;
+    font-size: 2.5em;
 }
 
 .site-page-header {
@@ -222,14 +231,35 @@ h1 {
     .site-page-header{
         height: 400px;
     }
-    .site-page-header h1 {
+    .site-page-header h1{
         font-size: 1.23em;
+    }
+    .news-tab h1 {
+        font-size: 1.3em;
+    }
+    .news-tab h3 {
+       font-size: 0.8em;
     }
 }
 
 @media (min-width: 356px) {
-    .site-page-header h1 {
+    .site-page-header h1{
         font-size: 1.5em;
+    }
+    .news-tab h1 {
+        font-size: 1.6em;
+    }
+}
+
+@media (min-width: 400px) {
+    .news-tab h3 {
+       font-size: 1em;
+    }
+}
+
+@media (min-width: 500px) {
+    .news-tab h3 {
+       font-size: 1.2em;
     }
 }
 
@@ -237,8 +267,14 @@ h1 {
     .site-page-header{
         height: 250px;
     }
-    .site-page-header h1 {
-        font-size: 1.7em;
+    .site-page-header h1{
+        font-size: 1.5em;
+    }
+    .news-tab h1 {
+        font-size: 2.3em;
+    }
+    .news-tab h3 {
+       font-size: 1.5em;
     }
 }
 
@@ -259,30 +295,49 @@ h1 {
     font-size:90px;
 }
 
-.block{
+.news{
     height: 320px;
-    margin: 20px 0;
+    margin: 20px 10px;
     border-radius: 5px;
     border: 2px solid #eee;
     transition: all .3s;
+    outline: none;
 }
 
-.block:hover {
+.news:hover {
+    cursor: pointer;
     transform: scale(1.01);
     box-shadow: 0 0 25px rgba(0, 0, 0, 0.1);
 }
 
-.block h3 {
+.news img {
+    width : 100%;
+    height : 80%;
+}
+
+.news h3 {
     backface-visibility: hidden;
     transform: translateZ(0);
 }
 
+.news p {
+    visibility: hidden;
+}
+
+.slick-next:before,
+.slick-prev:before {
+    font-size: 25px;
+    color: #7c7c7c;
+}
+
+.slick-dots li button:before,
+.slick-dots li.slick-active button:before{
+    font-size: 10px;
+    color: #7c7c7c;
+}
+
 .news-background {
     position:fixed;
-    padding:0;
-    margin:0;
-    top:0;
-    left:0;
     width: 100%;
     height: 100%;
     background:rgba(200,200,200,0.9);
@@ -291,17 +346,19 @@ h1 {
 }
 
 .news-tab {
-    margin: auto;
-    width: 70%;
-    height: 70%;
+    padding: 10px;
+    width: 80%;
+    height: 80%;
     border-radius: 5px;
     background: #fff;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    text-align: center;
 }
 
 .close {
-    margin: 10px;
+    top: 0;
+    left: 100%;
 }
