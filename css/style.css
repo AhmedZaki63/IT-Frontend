@@ -20,6 +20,7 @@ body {
 #about {
     padding-top: 100px;
     text-align: center;
+    margin-bottom: 150px;
 }
 
 #blog {
@@ -358,7 +359,34 @@ h1 {
     text-align: center;
 }
 
-.close {
-    top: 0;
-    left: 100%;
+.a,.b,.c {
+    cursor:pointer;
+    height: 60px;
+    font-size: 18px;
+    font-weight: 300;
+    color: #52565e;
+    padding: 5px;    
+    margin-top: 0;
+}
+
+.x,.z{
+    display: none;
+}
+
+.about-tab-content {
+    visibility: visible;
+    z-index: 3;
+    overflow: auto;
+    border-radius: 2px;
+    border: 1px solid black;
+    padding-top: 26px ;
+    background-color: #fff;
+    color: #52565e;
+    min-height: 231px;
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: 300;
+    left: -16px;
+    font-family: Lato,sans-serif;
+    padding-top:50px 
 }

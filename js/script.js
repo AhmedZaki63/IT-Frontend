@@ -84,3 +84,30 @@ $(document).ready(function(){
     });
     */
 });
+//////////////////////////////////////////////////////////////////////////////
+$("#about .a").click(function(){
+    $("#about .x").css("display","block");
+    $("#about .y").css("display","none");
+    $("#about .z").css("display","none");
+    $("#about .a").css("background-color","#e7e7e7");
+    $("#about .b").css("background-color","#fff");
+    $("#about .c").css("background-color","#fff");
+ });
+$("#about .b").click(function(){
+    $("#about .y").css("display","block");
+    $("#about .x").css("display","none");
+    $("#about .z").css("display","none");
+    $("#about .b").css("background-color","#e7e7e7");
+    $("#about .a").css("background-color","#fff");
+    $("#about .c").css("background-color","#fff");
+});
+$("#about .c").click(function(){
+
+    $("#about .z").css("display","block");
+    $("#about .y").css("display","none");
+    $("#about .x").css("display","none");
+    $("#about .c").css("background-color","#e7e7e7");
+    $("#about .a").css("background-color","#fff");
+    $("#about .b").css("background-color","#fff");
+
+});
