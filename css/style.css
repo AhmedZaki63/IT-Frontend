@@ -9,33 +9,31 @@ body {
 }
 
 #home {
-    padding: 100px 0;
     text-align: center;
 }
 
-#home img{
+#home img {
     height: 150px;
 }
 
 #about {
     padding-top: 100px;
     text-align: center;
-    margin-bottom: 150px;
 }
 
 #blog {
-    /*height: 100%;*/
     padding-top: 100px;
     text-align: center;
 }
 
 #workshops {
-    padding: 150px 0;
+    padding-top: 100px;
     text-align: center;
 }
 
 #contact {
-    padding: 10px;
+    margin-top: 100px;
+    padding: 20px;
     text-align: center;
     color: #fff;
     background: #2D2D2D;
@@ -60,7 +58,7 @@ body {
     background-color: #1D1D1D;
 }
 
-.navbar-default{
+.navbar-default {
     margin: 0px;
     background: #fff;
     border: 0;
@@ -75,7 +73,7 @@ body {
     font-size: 15px;
 }
 
-.navbar-nav li{
+.navbar-nav li {
     padding: 0 15px;
 }
 
@@ -83,13 +81,12 @@ body {
     text-align: center;
 }
 
-.navbar-brand
-{
-	padding: 5px;
+.navbar-brand {
+    padding: 5px;
     transition: all .5s;
 }
 
-.navbar-brand img{
+.navbar-brand img {
     height: 40px;
 }
 
@@ -99,15 +96,15 @@ body {
     z-index: 10;
 }
 
-.affix ~ * {
-     position: relative;
-     top: 50px;
-  }
+.affix~* {
+    position: relative;
+    top: 50px;
+}
 
 .circle {
     width: 360px;
     height: 360px;
-    box-shadow: 5px -5px rgba(0,0,0,0.6);
+    box-shadow: 5px -5px rgba(0, 0, 0, 0.6);
     border-radius: 20%;
     margin: 10px auto;
     color: #fff;
@@ -120,15 +117,15 @@ body {
 }
 
 .mission .circle {
-    background:#64C0BA;
+    background: #64C0BA;
 }
 
 .about-us .circle {
-    background:#27A5DC;
+    background: #27A5DC;
 }
 
 .vision .circle {
-    background:#A5DBDD;
+    background: #A5DBDD;
 }
 
 .circle .content img {
@@ -142,7 +139,7 @@ body {
 
 #intro {
     position: relative;
-    min-height: 600px;
+    min-height: 650px;
     z-index: 100;
 }
 
@@ -184,7 +181,7 @@ body {
     position: absolute;
     left: 0;
     right: 0;
-    top: 300px;
+    top: 350px;
 }
 
 #intro .banner li {
@@ -222,29 +219,26 @@ h1 {
 .site-page-header {
     background-color: #F5F8FA;
     padding: 0 20%;
-    border-bottom: 1px solid #eee;
     display: flex;
     justify-content: center;
     flex-direction: column;
 }
 
 @media (min-width: 250px) {
-    .site-page-header{
+    .site-page-header {
         height: 400px;
     }
-    .site-page-header h1{
+    .site-page-header h1 {
         font-size: 1.23em;
     }
     .news-tab h1 {
         font-size: 1.3em;
     }
-    .news-tab h3 {
-       font-size: 0.8em;
-    }
+    .news-tab h3 {}
 }
 
 @media (min-width: 356px) {
-    .site-page-header h1{
+    .site-page-header h1 {
         font-size: 1.5em;
     }
     .news-tab h1 {
@@ -253,38 +247,32 @@ h1 {
 }
 
 @media (min-width: 400px) {
-    .news-tab h3 {
-       font-size: 1em;
-    }
+    .news-tab h3 {}
 }
 
 @media (min-width: 500px) {
-    .news-tab h3 {
-       font-size: 1.2em;
-    }
+    .news-tab h3 {}
 }
 
 @media (min-width: 750px) {
-    .site-page-header{
+    .site-page-header {
         height: 250px;
     }
-    .site-page-header h1{
+    .site-page-header h1 {
         font-size: 1.5em;
     }
     .news-tab h1 {
         font-size: 2.3em;
     }
-    .news-tab h3 {
-       font-size: 1.5em;
-    }
+    .news-tab h3 {}
 }
 
 .spn {
-  width: 80%;
-  border: 1px solid #ccc;
-  margin: auto;
-  position: relative;
-  top: 16px;
+    width: 80%;
+    border: 1px solid #ccc;
+    margin: auto;
+    position: relative;
+    top: 16px;
 }
 
 #workshops ul {
@@ -293,10 +281,10 @@ h1 {
 }
 
 #workshops ul li i {
-    font-size:90px;
+    font-size: 90px;
 }
 
-.news{
+.news {
     height: 320px;
     margin: 20px 10px;
     border-radius: 5px;
@@ -312,13 +300,12 @@ h1 {
 }
 
 .news img {
-    width : 100%;
-    height : 80%;
+    width: 100%;
+    height: 80%;
 }
 
 .news h3 {
     backface-visibility: hidden;
-    transform: translateZ(0);
 }
 
 .news p {
@@ -332,24 +319,24 @@ h1 {
 }
 
 .slick-dots li button:before,
-.slick-dots li.slick-active button:before{
+.slick-dots li.slick-active button:before {
     font-size: 10px;
     color: #7c7c7c;
 }
 
 .news-background {
-    position:fixed;
+    position: fixed;
     width: 100%;
     height: 100%;
-    background:rgba(200,200,200,0.9);
+    background: rgba(200, 200, 200, 0.9);
     z-index: 999;
-    display:none;
+    display: none;
 }
 
 .news-tab {
     padding: 10px;
-    width: 80%;
-    height: 80%;
+    width: 75%;
+    height: 75%;
     border-radius: 5px;
     background: #fff;
     position: absolute;
@@ -359,34 +346,93 @@ h1 {
     text-align: center;
 }
 
-.a,.b,.c {
-    cursor:pointer;
+.news-tab .news-img {
+    height: 50%;
+    overflow-x: auto;
+}
+
+.news-tab .des {
+    height: 40%;
+    overflow-y: auto;
+}
+
+.close {
+    top: 0;
+    right: 0;
+    padding: 10px;
+    position: absolute;
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 35%;
+    opacity: .6;
+    background-color: #ccc;
+    color: black;
+}
+
+.close:hover,
+.close:focus {
+    opacity: .8;
+}
+
+::-webkit-scrollbar {
+    width: 14px;
+    height: 14px;
+}
+
+::-webkit-scrollbar-track {
+    background: rgba(230, 230, 230, .9);
+    -webkit-box-shadow: inset 0 0 5px rgba(0, 0, 0, .1);
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgba(175, 175, 175, .6);
+    -webkit-box-shadow: inset 0 0 5px rgba(0, 0, 0, .6);
+    border-radius: 10px;
+    z-index: 1000;
+}
+
+.a,
+.b,
+.c {
+    cursor: pointer;
     height: 60px;
     font-size: 18px;
     font-weight: 300;
     color: #52565e;
-    padding: 5px;    
-    margin-top: 0;
-}
-
-.x,.z{
-    display: none;
+    padding: 5px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 }
 
 .about-tab-content {
-    visibility: visible;
-    z-index: 3;
-    overflow: auto;
-    border-radius: 2px;
-    border: 1px solid black;
-    padding-top: 26px ;
-    background-color: #fff;
+    min-height: 180px;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    background-color: #F5F8FA;
+    /*border: 1px solid black;*/
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.x,
+.y,
+.z {
+    position: absolute;
     color: #52565e;
-    min-height: 231px;
-    font-size: 18px;
-    line-height: 22px;
+    font-size: 20px;
     font-weight: 300;
-    left: -16px;
-    font-family: Lato,sans-serif;
-    padding-top:50px 
+    opacity: 0;
+    visibility: hidden;
+    transition: all .3s;
+    width: 100%;
+}
+
+.about-tab-content .select {
+    opacity: 1;
+    visibility: visible;
+    transform: scale(.9);
 }
