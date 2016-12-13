@@ -1,11 +1,11 @@
 $(document).ready(function () {
 
     // Scrolling Animation \\
-    $('a.auto-scroll').click(function () {
+    $('a.auto-scroll').click(function (e) {
         $('html, body').stop().animate({
             scrollTop: $($(this).attr('href')).offset().top
         }, 1500, 'easeInOutExpo');
-        event.preventDefault();
+        e.preventDefault();
     });
 
     $(".navbar").affix({
@@ -56,7 +56,8 @@ $(document).ready(function () {
     $('.close').click(function () {
         $('.news-background').hide(200);
     });
-    $('#blog .news-list .news').click(function () {
+
+    $('#blog .news-list .news').click(function (e) {
         $('.news-background').show(200);
         var title = $(this).find('h3').text();
         var img = $(this).find('img').attr('src');
@@ -74,21 +75,24 @@ $(document).ready(function () {
     $('.news-list').slick({
         slidesToShow: 3,
         slidesToScroll: 1,
+        arrows: true,
         dots: true,
         responsive: [
             {
                 breakpoint: 992,
                 settings: {
-                    slidesToShow: 2
+                    slidesToShow: 2,
+                    arrows: false
                 }
-            },
+                        },
             {
                 breakpoint: 650,
                 settings: {
-                    slidesToShow: 1
+                    slidesToShow: 1,
+                    arrows: false
                 }
-            }
-        ]
+                        }
+                    ]
     });
 
     $('[data-toggle="popover"]').popover();

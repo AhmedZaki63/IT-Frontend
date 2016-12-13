@@ -141,6 +141,7 @@ body {
     position: relative;
     min-height: 650px;
     z-index: 100;
+    overflow: hidden;
 }
 
 #intro .container {
@@ -218,7 +219,7 @@ h1 {
 
 .site-page-header {
     background-color: #F5F8FA;
-    padding: 0 20%;
+    padding: 0 15%;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -277,11 +278,23 @@ h1 {
 
 #workshops ul {
     list-style: none;
-    margin: 50px auto;
+    margin-top: 50px;
 }
 
-#workshops ul li i {
-    font-size: 90px;
+#workshops ul li {
+    padding: 0;
+}
+
+#workshops ul li img {
+    height: 135px;
+    width: 135px;
+    /*width: 100%;*/
+    margin: 5px;
+    /*cursor: pointer;*/
+}
+
+.news-list {
+    padding: 0;
 }
 
 .news {
@@ -306,6 +319,7 @@ h1 {
 
 .news h3 {
     backface-visibility: hidden;
+    font-size: 20px;
 }
 
 .news p {
@@ -407,8 +421,8 @@ h1 {
 }
 
 .about-tab-content {
-    min-height: 180px;
-    padding: 10px;
+    height: 300px;
+    padding: 0;
     border-radius: 5px;
     text-align: center;
     background-color: #F5F8FA;
@@ -416,6 +430,12 @@ h1 {
     display: flex;
     justify-content: center;
     flex-direction: column;
+}
+
+@media (min-width: 600px) {
+    .about-tab-content {
+        height: 180px;
+    }
 }
 
 .x,
@@ -426,13 +446,12 @@ h1 {
     font-size: 20px;
     font-weight: 300;
     opacity: 0;
-    visibility: hidden;
     transition: all .3s;
     width: 100%;
 }
 
 .about-tab-content .select {
+    padding: 0;
     opacity: 1;
-    visibility: visible;
     transform: scale(.9);
 }
