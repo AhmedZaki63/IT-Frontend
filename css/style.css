@@ -288,9 +288,7 @@ h1 {
 #workshops ul li img {
     height: 135px;
     width: 135px;
-    /*width: 100%;*/
     margin: 5px;
-    /*cursor: pointer;*/
 }
 
 .news-list {
@@ -421,15 +419,11 @@ h1 {
 }
 
 .about-tab-content {
-    height: 300px;
+    height: 350px;
     padding: 0;
     border-radius: 5px;
     text-align: center;
     background-color: #F5F8FA;
-    /*border: 1px solid black;*/
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
 }
 
 @media (min-width: 600px) {
@@ -447,11 +441,13 @@ h1 {
     font-weight: 300;
     opacity: 0;
     transition: all .3s;
-    width: 100%;
+    width: 95%;
+    float: left;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .about-tab-content .select {
-    padding: 0;
     opacity: 1;
-    transform: scale(.9);
 }
