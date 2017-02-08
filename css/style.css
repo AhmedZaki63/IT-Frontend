@@ -6,6 +6,7 @@ html {
 body {
     width: 100%;
     height: 100%;
+    font-family: cursive;
 }
 
 #home {
@@ -17,22 +18,22 @@ body {
 }
 
 #about {
-    padding-top: 100px;
+    padding-top: 75px;
     text-align: center;
 }
 
 #blog {
-    padding-top: 100px;
+    padding-top: 75px;
     text-align: center;
 }
 
 #workshops {
-    padding-top: 100px;
+    padding-top: 75px;
     text-align: center;
 }
 
 #contact {
-    margin-top: 100px;
+    margin-top: 75px;
     padding: 20px;
     text-align: center;
     color: #fff;
@@ -41,8 +42,8 @@ body {
 
 .social {
     margin: 10px 20px;
-    height: 100px;
-    width: 100px;
+    height: 75px;
+    width: 75px;
     transform: scale(0.9);
     transition: transform 0.3s;
 }
@@ -99,42 +100,6 @@ body {
 .affix~* {
     position: relative;
     top: 50px;
-}
-
-.circle {
-    width: 360px;
-    height: 360px;
-    box-shadow: 5px -5px rgba(0, 0, 0, 0.6);
-    border-radius: 20%;
-    margin: 10px auto;
-    color: #fff;
-}
-
-.circle .content {
-    width: 320px;
-    height: 320px;
-    margin: auto;
-}
-
-.mission .circle {
-    background: #64C0BA;
-}
-
-.about-us .circle {
-    background: #27A5DC;
-}
-
-.vision .circle {
-    background: #A5DBDD;
-}
-
-.circle .content img {
-    height: 100px;
-    width: 100px;
-}
-
-.circle .content h2 {
-    margin-top: 30px;
 }
 
 #intro {
@@ -214,7 +179,7 @@ body {
 h1 {
     display: block;
     font-weight: bold;
-    font-size: 2.5em;
+    font-size: 2em;
 }
 
 .site-page-header {

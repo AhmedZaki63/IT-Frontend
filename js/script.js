@@ -95,38 +95,31 @@ $(document).ready(function () {
                     ]
     });
 
-    $('[data-toggle="popover"]').popover();
-    /*
-    $('#text').fadeOut(300, function() {
-        $('#text').parent().css('background-color', '#dd3333').fadeIn(300);
+    // about us \\
+    $("#about .a").click(function () {
+        $("#about .x").addClass("select")
+        $("#about .y").removeClass("select");
+        $("#about .z").removeClass("select");
+        $("#about .a").css("background-color", "#e7e7e7");
+        $("#about .b").css("background-color", "#fff");
+        $("#about .c").css("background-color", "#fff");
     });
-    */
-});
+    $("#about .b").click(function () {
+        $("#about .y").addClass("select")
+        $("#about .x").removeClass("select");
+        $("#about .z").removeClass("select");
+        $("#about .b").css("background-color", "#e7e7e7");
+        $("#about .a").css("background-color", "#fff");
+        $("#about .c").css("background-color", "#fff");
+    });
+    $("#about .c").click(function () {
 
-//////////////////////////////////////////////////////////////////////////////
-$("#about .a").click(function () {
-    $("#about .x").addClass("select")
-    $("#about .y").removeClass("select");
-    $("#about .z").removeClass("select");
-    $("#about .a").css("background-color", "#e7e7e7");
-    $("#about .b").css("background-color", "#fff");
-    $("#about .c").css("background-color", "#fff");
-});
-$("#about .b").click(function () {
-    $("#about .y").addClass("select")
-    $("#about .x").removeClass("select");
-    $("#about .z").removeClass("select");
-    $("#about .b").css("background-color", "#e7e7e7");
-    $("#about .a").css("background-color", "#fff");
-    $("#about .c").css("background-color", "#fff");
-});
-$("#about .c").click(function () {
+        $("#about .z").addClass("select")
+        $("#about .y").removeClass("select");
+        $("#about .x").removeClass("select");
+        $("#about .c").css("background-color", "#e7e7e7");
+        $("#about .a").css("background-color", "#fff");
+        $("#about .b").css("background-color", "#fff");
 
-    $("#about .z").addClass("select")
-    $("#about .y").removeClass("select");
-    $("#about .x").removeClass("select");
-    $("#about .c").css("background-color", "#e7e7e7");
-    $("#about .a").css("background-color", "#fff");
-    $("#about .b").css("background-color", "#fff");
-
+    });
 });
